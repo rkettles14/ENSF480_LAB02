@@ -2,13 +2,13 @@
 //  rectangle.cpp
 
 #include <stdio.h>
-#include <iostream.h>
+#include <iostream>
 #include "square.h"
 #include "rectangle.h"
 
 using namespace std;
 
-Rectangle::Rectangle(double x, double y, char* name, double side_one, double side_two)
+Rectangle::Rectangle(double x, double y, char* name, double side_one, double side_two) : Square(x,y,name,side_one)
 {
   side_a = side_one;
 }
@@ -28,7 +28,7 @@ double Rectangle::getsidea()const
   return side_a;
 }
 
-double Rectangle::getideab()const
+double Rectangle::getsideb()const
 {
   return side_b;
 }

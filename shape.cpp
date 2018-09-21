@@ -15,7 +15,7 @@ Shape::Shape(double x, double y, const char* name): origin(x,y){
 	//origin = Point(x,y);
 	shapeName = new char[strlen(name)+1];
 	strcpy(shapeName, name);
-	
+
 }
 
 Shape::~Shape(){
@@ -46,23 +46,14 @@ Shape& Shape::operator=(const Shape& rhs){
 }
 
 void Shape::display(){
-	cout<<"Shape Name: "<< shapeName<<endl;
+	cout<<"Shape Name: "<< shapeName << endl;
 	origin.display();
 }
 
 //test main
-int main(){
-	Shape s(1.5, 75.9, "Yeeted");
-	s.display();
-	
-	return 0;
-}
-
-
-
-
-
-
-
-
-
+// int main(){
+// 	Shape s(1.5, 75.9, "Yeeted");
+// 	s.display();
+//
+// 	return 0;
+// }

@@ -3,12 +3,13 @@
 //  This class inherits from class Shape, it must have equal side lengths
 
 #include <stdio.h>
-#include <iostream.h>
+#include <iostream>
 #include "square.h"
+#include "shape.h"
 
 using namespace std;
 
-Square::Square(double x, double y, char* name, double side_one)
+Square::Square(double x, double y, char* name, double side_one) : Shape(x,y,name)
 {
   side_a = side_one;
 }
@@ -35,12 +36,12 @@ double Square::perimeter()
   return side_a * 4;
 }
 
-double Square::getside()const
+double Square::getsidea()const
 {
   return side_a;
 }
 
-void Square::setside(double side)
+void Square::setsidea(double side)
 {
   side_a = side;
 }
@@ -48,7 +49,7 @@ void Square::setside(double side)
 void Square::display()
 {
   Shape::display();
-  cout << setprecision(2) << side_a;
-  cout << setprecision(2) << area();
-  cout << setprecision(2) << perimeter();
+  cout << "Side A: " << setprecision(2) << side_a << endl;
+  cout << "Area: "<< setprecision(4) << area() << endl;
+  cout << "Perimeter: "<< setprecision(2) << perimeter()<<endl;
 }

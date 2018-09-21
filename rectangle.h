@@ -3,7 +3,7 @@
 //
 
 #include <stdio.h>
-#include <iostream.h>
+#include <iostream>
 #include "square.h"
 
 using namespace std;

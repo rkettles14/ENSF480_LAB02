@@ -2,9 +2,6 @@
 // graphicsworld.h
 
 #include <stdio.h>
-#include <iostream.h>
-#include "square.h"
-#include "rectangle.h"
 
 using namespace std;
 

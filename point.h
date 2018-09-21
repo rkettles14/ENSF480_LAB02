@@ -10,27 +10,27 @@ class Point{
 		double y;
 		int id;
 		static int count;
-	
+
 	public:
-		
+
 		Point(double xcoord, double ycoord);
 		Point(const Point& source);
 		Point& operator = (const Point& rhs);
 		~Point();
-	
-		double getXValue();
-		double getYValue();
+
+		double getXValue()const;
+		double getYValue()const;
 		void setXValue(double xval);
 		void setYValue(double yval);
-		
+
 		void display();
-		
-		double getDistance(Point& p);
-		
+
+		double distance(const Point& p)const;
+
 		static double distance(Point& p1, Point& p2);
+
 		static int counter();
-		
-	
+
 };
 
 #endif

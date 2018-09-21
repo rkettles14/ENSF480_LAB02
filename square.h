@@ -3,7 +3,9 @@
 //
 
 #include <stdio.h>
-#include <iostream.h>
+#include <iostream>
+#include <iomanip>
+#include "shape.h"
 
 
 using namespace std;
