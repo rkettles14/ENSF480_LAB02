@@ -50,6 +50,17 @@ void Shape::display(){
 	origin.display();
 }
 
+double Shape::distance (Shape& other){
+	
+	return origin.distance(other.origin);
+}
+
+double Shape::distance (Shape& the_shape, Shape& other){
+	return Point::distance(the_shape.origin, other.origin);
+}
+
+
+
 //test main
 // int main(){
 // 	Shape s(1.5, 75.9, "Yeeted");
