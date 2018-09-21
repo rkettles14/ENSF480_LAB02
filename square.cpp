@@ -14,17 +14,16 @@ Square::Square(double x, double y, char* name, double side_one) : Shape(x,y,name
   side_a = side_one;
 }
 
-// Square::Square(const Source& source)
-// {
-//   side_a = source.side_one;
-// }
+Square::Square(const Square& source): Shape(source), side_a(source.side_a)
+{
+}
 
-// Square& operator =(const Square& rhs)
-// {
-//   Square::operator=();
-//   side_a = rhs.side_one;
-//   return
-// }
+Square& Square::operator =(const Square& rhs)
+{
+  Shape::operator=(rhs);
+  side_a = rhs.side_a;
+  return *this;
+}
 
 double Square::area()
 {

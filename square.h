@@ -19,9 +19,9 @@ class Square : public Shape {
 
     Square(double x, double y, char* name, double side_one);
 
-    // Square(const Square& source);
-    //
-    // Square& operator =(const Square& rhs);
+    Square(const Square& source);
+
+    Square& operator =(const Square& rhs);
 
     virtual double area();
 
