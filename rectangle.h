@@ -21,9 +21,9 @@ class Rectangle : public Square {
 
     Rectangle& operator =(const Rectangle& rhs);
 
-    double area();
+    virtual double area();
 
-    double perimeter();
+    virtual double perimeter();
 
     double getsidea()const;
 
@@ -33,7 +33,7 @@ class Rectangle : public Square {
 
     void setsideb(double side);
 
-    void display();
+    virtual void display();
 
   protected:
 

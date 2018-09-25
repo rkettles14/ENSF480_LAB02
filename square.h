@@ -31,7 +31,7 @@ class Square : public Shape {
 
     void setsidea(double side);
 
-    void display();
+    virtual void display();
 
   protected:
 

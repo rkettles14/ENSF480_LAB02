@@ -13,7 +13,7 @@ using namespace std;
 
 void GraphicsWorld::run()
 {
-  #if 0 // Change 0 to 1 to test Point
+  #if 1 // Change 0 to 1 to test Point
     Point m (6, 8);
     Point n (6,8);
     n.setXValue(9);
@@ -24,7 +24,7 @@ void GraphicsWorld::run()
     << Point::distance(m, n);
 #endif // end of block to test Point
 
-#if 0 // Change 0 to 1 to test Square
+#if 1 // Change 0 to 1 to test Square
     cout << "\n\nTesting Functions in class Square:" <<endl;
     Square s(5, 7, "SQUARE - S", 12);
     s.display();
@@ -64,7 +64,7 @@ void GraphicsWorld::run()
   rec3.display();
 #endif // end of block to test Rectangle
 
-#if 0 // Change 0 to 1 to test using array of pointer and polymorphism
+#if 1 // Change 0 to 1 to test using array of pointer and polymorphism
   cout << "\nTesting array of pointers and polymorphism:" <<endl;
   Shape* sh[4];
   sh[0] = &s;

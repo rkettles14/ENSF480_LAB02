@@ -21,7 +21,7 @@ class Shape{
 
 		char& getName();
 
-		void display();
+		virtual void display();
 
 		double distance (Shape& other);
 
