@@ -7,6 +7,8 @@
 #include "shape.h"
 #include "square.h"
 #include "rectangle.h"
+#include "circle.h"
+#include "curvecut.h"
 #include "graphicsworld.h"
 
 using namespace std;
@@ -64,7 +66,7 @@ void GraphicsWorld::run()
   rec3.display();
 #endif // end of block to test Rectangle
 
-#if 1 // Change 0 to 1 to test using array of pointer and polymorphism
+#if 0// Change 0 to 1 to test using array of pointer and polymorphism
   cout << "\nTesting array of pointers and polymorphism:" <<endl;
   Shape* sh[4];
   sh[0] = &s;
@@ -75,18 +77,19 @@ void GraphicsWorld::run()
   sh [1]->display();
   sh [2]->display();
   sh [3]->display();
-  
- 
-#if 0 // Change 0 to 1 to test cicle and curvecut
+
+#endif
+
+#if 1 // Change 0 to 1 to test cicle and curvecut
  cout << "\nTesting Functions in class Circle:" <<endl;
- Circle c (3, 5, 9, "CIRCLE C");
+ Circle c (3, 5,"CIRCLE C", 9);
  c.display();
  cout << "the area of " << c.getName() <<" is: "<< c.area() << endl;
  cout << "the perimeter of " << c.getName() << " is: "<< c.perimeter() << endl;
  d = a.distance(c);
  cout << "\nThe distance between rectangle a and circle c is: " <<d;
 
- CurveCut rc (6, 5, 10, 12, 9, "CurveCut rc");
+ CurveCut rc (6, 5, "CurveCut rc", 10, 12, 9);
 rc.display();
 cout << "the area of " << rc.getName() <<" is: "<< rc.area();
 cout << "the perimeter of " << rc.getName() << " is: "<< rc.perimeter();
@@ -114,17 +117,13 @@ cout << "\nTesting copy constructor in class CurveCut:" <<endl;
 CurveCut cc = rc;
 cc.display();
 cout << "\nTesting assignment operator in class CurveCut:" <<endl;
-CurveCut cc2(2, 5, 100, 12, 9, "CurveCut cc2");
+CurveCut cc2(2, 5, "CurveCut cc2", 100, 12, 9);
 cc2.display();
 cc2 = cc;
 cc2.display();
 #endif
 } // END OF FUNCTION run
 
-  
-  
-#endif
-}
 
 int main(void)
 {

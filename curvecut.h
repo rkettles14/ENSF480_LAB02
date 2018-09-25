@@ -1,7 +1,6 @@
 // Curve Cut class
 // curvecut.h
 
-
 #include <stdio.h>
 #include <iostream>
 #include <iomanip>
@@ -13,6 +12,7 @@
 
 class CurveCut : public Circle, public rectangle
 {
+public: 
   CurveCut(double x, double y, char* name, double side_one, double side_two, double radius);
 
   CurveCut(const CurveCut& source);
@@ -26,4 +26,4 @@ class CurveCut : public Circle, public rectangle
   void display();
 };
 
-#end
+#endif
