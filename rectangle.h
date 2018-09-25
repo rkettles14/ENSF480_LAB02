@@ -25,11 +25,7 @@ class Rectangle : virtual public Square {
 
     virtual double perimeter();
 
-    double getsidea()const;
-
     double getsideb()const;
-
-    void setsidea(double side);
 
     void setsideb(double side);
 

@@ -34,20 +34,12 @@ double Rectangle::perimeter()
   return (side_a * 2) + (side_b * 2);
 }
 
-double Rectangle::getsidea()const
-{
-  return side_a;
-}
 
 double Rectangle::getsideb()const
 {
   return side_b;
 }
 
-void Rectangle::setsidea(double side)
-{
-  side_a = side;
-}
 
 void Rectangle::setsideb(double side)
 {

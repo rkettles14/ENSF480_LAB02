@@ -66,6 +66,14 @@ void GraphicsWorld::run()
   rec3.display();
 #endif // end of block to test Rectangle
 
+#if 0
+  
+  cout << "The dimensions of RECTANGLE A are as follows" << endl;
+  cout << "Side A : " << a.getsidea() << endl;
+  cout << "Side B : " << a.getsideb() << endl;
+  
+#endif
+
 #if 1// Change 0 to 1 to test using array of pointer and polymorphism
   cout << "\nTesting array of pointers and polymorphism:" <<endl;
   Shape* sh[4];
