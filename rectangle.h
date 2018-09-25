@@ -11,7 +11,7 @@ using namespace std;
 #ifndef RECTANGLE_H
 #define RECTANGLE_H
 
-class Rectangle : public Square {
+class Rectangle : virtual public Square {
 
   public:
 

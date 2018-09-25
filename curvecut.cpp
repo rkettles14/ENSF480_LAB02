@@ -10,7 +10,7 @@
 
 CurveCut::CurveCut(double x, double y, char* name,
   double side_one, double side_two, double radius) : Rectangle(x,y,name,side_one,side_two)
-  , Circle(x,y,name,radius)
+  , Circle(x,y,name,radius), Shape(x,y,name)
 {
   if (radius > side_a || radius > side_b)
   {
@@ -19,7 +19,7 @@ CurveCut::CurveCut(double x, double y, char* name,
   }
 }
 
-CurveCut::CurveCut(const CurveCut& source) : Rectangle(source), Circle(source)
+CurveCut::CurveCut(const CurveCut& source) : Rectangle(source), Circle(source), Shape(source)
 {
 }
 
@@ -43,7 +43,7 @@ double perimeter()
 void display()
 {
   Shape::display();
-  cout << "Width: " << setprecision(5) << side_a  << endl;
-  cout << "Length: " << setprecision(5) << side_b  << endl;
-  cout << "Radius of Cut: " << setprecision(5) << radius  << endl;
+  cout << "Width: " << setprecision(5) << getsidea()  << endl;
+  cout << "Length: " << setprecision(5) << getsideb()  << endl;
+  cout << "Radius of Cut: " << setprecision(5) << getRadius()  << endl;
 }
