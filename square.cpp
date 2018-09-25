@@ -9,9 +9,8 @@
 
 using namespace std;
 
-Square::Square(double x, double y, char* name, double side_one) : Shape(x,y,name)
+Square::Square(double x, double y, char* name, double side_one) : Shape(x,y,name), side_a(side_one)
 {
-  side_a = side_one;
 }
 
 Square::Square(const Square& source): Shape(source), side_a(source.side_a)
