@@ -8,11 +8,11 @@
 
 using namespace std;
 
-Rectangle::Rectangle(double x, double y, char* name, double side_one, double side_two) : Square(x,y,name,side_one), side_b(side_two)
+Rectangle::Rectangle(double x, double y, char* name, double side_one, double side_two) : Square(x,y,name,side_one), Shape(x,y,name), side_b(side_two)
 {
 }
 
-Rectangle::Rectangle(Rectangle& source) : Square(source), side_b(source.side_b)
+Rectangle::Rectangle(const Rectangle& source) : Square(source), Shape(source), side_b(source.side_b)
 {
 }
 

@@ -19,7 +19,7 @@ class Shape{
 
 		Point& getOrigin();
 
-		char& getName();
+		char* getName()const;
 
 		virtual void display();
 
@@ -28,9 +28,9 @@ class Shape{
 		static double distance (Shape& the_shape, Shape& other);
 
 		void move (double dx, double dy);
-		
+
 		virtual double area()=0;
-		
+
 		virtual double perimeter()=0;
 };
 

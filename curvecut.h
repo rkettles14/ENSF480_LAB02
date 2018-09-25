@@ -15,17 +15,13 @@ class CurveCut : public Circle, public Rectangle
 public:
   CurveCut(double x, double y, char* name, double side_one, double side_two, double radius);
 
-  using Rectangle::getName;
-
-  using Shape::distance;
-
   CurveCut(const CurveCut& source);
 
   CurveCut& operator =(const CurveCut& rhs);
 
-  virtual double area();
+  double area();
 
-  virtual double perimeter();
+  double perimeter();
 
   void display();
 };

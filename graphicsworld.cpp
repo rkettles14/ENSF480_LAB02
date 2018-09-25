@@ -33,7 +33,7 @@ void GraphicsWorld::run()
 #endif // end of block to test Square
 
 #if 1 // Change 0 to 1 to test Rectangle
-  cout << "\nTesting Functions in class Rectangle:";
+  cout << "\nTesting Functions in class Rectangle:" << endl;
   Rectangle a(5, 7, "RECTANGLE A", 12, 15);
   a.display();
   Rectangle b(16 , 7, "RECTANGLE B", 8, 9);
@@ -66,7 +66,7 @@ void GraphicsWorld::run()
   rec3.display();
 #endif // end of block to test Rectangle
 
-#if 0// Change 0 to 1 to test using array of pointer and polymorphism
+#if 1// Change 0 to 1 to test using array of pointer and polymorphism
   cout << "\nTesting array of pointers and polymorphism:" <<endl;
   Shape* sh[4];
   sh[0] = &s;
@@ -80,39 +80,39 @@ void GraphicsWorld::run()
 
 #endif
 
-#if 1 // Change 0 to 1 to test cicle and curvecut
+#if 1// Change 0 to 1 to test cicle and curvecut
  cout << "\nTesting Functions in class Circle:" <<endl;
  Circle c (3, 5,"CIRCLE C", 9);
  c.display();
  cout << "the area of " << c.getName() <<" is: "<< c.area() << endl;
  cout << "the perimeter of " << c.getName() << " is: "<< c.perimeter() << endl;
  d = a.distance(c);
- cout << "\nThe distance between rectangle a and circle c is: " <<d;
+ cout << "\nThe distance between rectangle a and circle c is: " <<d <<endl;
 
- CurveCut rc (6, 5, "CurveCut rc", 10, 12, 9);
+CurveCut rc (6, 5, "CurveCut rc", 10, 12, 9);
 rc.display();
-cout << "the area of " << rc.getName() <<" is: "<< rc.area();
-cout << "the perimeter of " << rc.getName() << " is: "<< rc.perimeter();
+cout << "the area of " << rc.getName() <<" is: "<< rc.area() <<endl;
+cout << "the perimeter of " << rc.getName() << " is: "<< rc.perimeter() <<endl;
 d = rc.distance(c);
-cout << "\nThe distance between rc and c is: " <<d;
+cout << "\nThe distance between rc and c is: " <<d <<endl;
 // Using array of Shape pointers:
-Shape* sh[4];
+// Shape* sh[4];
 sh[0] = &s;
 sh[1] = &a;
 sh [2] = &c;
 sh [3] = &rc;
 sh [0]->display();
-cout << "\nthe area of "<< sh[0]->getName() << "is: "<< sh[0] ->area();
-cout << "\nthe perimeter of " << sh[0]->getName () << " is: "<< sh[0]->perimeter();
+cout << "\nthe area of "<< sh[0]->getName() << "is: "<< sh[0] ->area() <<endl;
+cout << "\nthe perimeter of " << sh[0]->getName () << " is: "<< sh[0]->perimeter()<< endl;
 sh [1]->display();
-cout << "\nthe area of "<< sh[1]->getName() << "is: "<< sh[1] ->area();
-cout << "\nthe perimeter of " << sh[0]->getName () << " is: "<< sh[1]->perimeter();
+cout << "\nthe area of "<< sh[1]->getName() << "is: "<< sh[1] ->area()<<endl;
+cout << "\nthe perimeter of " << sh[0]->getName () << " is: "<< sh[1]->perimeter() <<endl;
 sh [2]->display();
-cout << "\nthe area of "<< sh[2]->getName() << "is: "<< sh[2] ->area();
-cout << "\nthe circumference of " << sh[2]->getName ()<< " is: "<< sh[2]->perimeter();
+cout << "\nthe area of "<< sh[2]->getName() << "is: "<< sh[2] ->area() <<endl;
+cout << "\nthe circumference of " << sh[2]->getName ()<< " is: "<< sh[2]->perimeter() <<endl;
 sh [3]->display();
-cout << "\nthe area of "<< sh[3]->getName() << "is: "<< sh[3] ->area();
-cout << "\nthe perimeter of " << sh[3]->getName () << " is: "<< sh[3]->perimeter();
+cout << "\nthe area of "<< sh[3]->getName() << "is: "<< sh[3] ->area() <<endl;
+cout << "\nthe perimeter of " << sh[3]->getName () << " is: "<< sh[3]->perimeter() <<endl;
 cout << "\nTesting copy constructor in class CurveCut:" <<endl;
 CurveCut cc = rc;
 cc.display();

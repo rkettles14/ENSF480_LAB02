@@ -17,7 +17,7 @@ class Rectangle : virtual public Square {
 
     Rectangle(double x, double y, char* name, double side_one, double side_two);
 
-    Rectangle(Rectangle& source);
+    Rectangle(const Rectangle& source);
 
     Rectangle& operator =(const Rectangle& rhs);
 

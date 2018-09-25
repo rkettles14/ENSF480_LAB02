@@ -51,12 +51,17 @@ void Shape::display(){
 }
 
 double Shape::distance (Shape& other){
-	
+
 	return origin.distance(other.origin);
 }
 
 double Shape::distance (Shape& the_shape, Shape& other){
 	return Point::distance(the_shape.origin, other.origin);
+}
+
+char* Shape::getName()const
+{
+	return shapeName;
 }
 
 

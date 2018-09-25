@@ -42,17 +42,17 @@ double Circle::perimeter(){
 
 void Circle::display(){
 	Shape::display();
-	cout << "Radius: " << setprecision(2) << radius << endl;
-	cout << "Area: "<< setprecision(4) << area() << endl;
-	cout << "Perimeter: "<< setprecision(2) << perimeter()<<endl;
-}	
+	cout << "Radius: " << setprecision(5) << radius << endl;
+	cout << "Area: "<< setprecision(5) << area() << endl;
+	cout << "Perimeter: "<< setprecision(5) << perimeter()<<endl;
+}
 //main function for testing
 /*
 int main(){
 	Circle c(12.9,13.8, "test_circle", 22);
-	
+
 	c.display();
-	
+
 	return 0;
 }
 */

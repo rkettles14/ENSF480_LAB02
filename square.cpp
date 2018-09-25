@@ -47,7 +47,7 @@ void Square::setsidea(double side)
 void Square::display()
 {
   Shape::display();
-  cout << "Side A: " << setprecision(2) << side_a << endl;
-  cout << "Area: "<< setprecision(4) << area() << endl;
-  cout << "Perimeter: "<< setprecision(2) << perimeter()<<endl;
+  cout << "Side A: " << setprecision(5) << side_a << endl;
+  cout << "Area: "<< setprecision(5) << area() << endl;
+  cout << "Perimeter: "<< setprecision(5) << perimeter()<<endl;
 }
